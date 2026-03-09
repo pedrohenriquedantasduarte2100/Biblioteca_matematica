@@ -57,3 +57,23 @@ def funcao_taylor(rad, k):
 
 resultado = funcao_taylor(radianoConvertido, k)
 print(f'O seno do angulo {anguloRecebido} = {resultado:.6f}')
+
+# Pedro
+# funçao exponencial
+
+
+def exponencial (x, termos=50):
+    print("-- iniciando funçao exponencial --")
+
+    termo_atual = 1.0
+    resultado = 1
+    
+    for i in range (1, termos):
+        termo_atual = termo_atual * x / i
+        resultado += termo_atual
+        
+    return resultado
+
+x = float(input("digite seu numero: "))
+
+print(exponencial(x))
